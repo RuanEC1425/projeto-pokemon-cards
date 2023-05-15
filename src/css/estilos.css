@@ -1,0 +1,189 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1263px;
+    margin: 0 auto;
+    background-color: rgba(28, 29, 31, 0.296);
+    color: #f7e2e2;
+}
+
+.modo-escuro {
+    background-color: rgba(18, 16, 16, 0.775);
+    color: rgb(35, 34, 34);
+} 
+.modo-escuro .card-pokemon{
+    background: rgb(208, 208, 208) ;
+}
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header .logo,
+header .Image-button {
+    width: 50px;
+}
+
+header .logo:hover,
+header .Image-button:hover {
+    transform: scale(1.10);
+    cursor: pointer;
+}
+
+#alterar-tema {
+    background: none;
+    border: none;
+}
+
+main {
+
+    padding: 25px;
+}
+
+main .Lista-de-pokemons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .card-pokemon {
+    background-color: rgb(35, 35, 35);
+    width: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.4s ease-in-out;
+    box-shadow: #0000001f 6px 4px;
+}
+ .caixa{
+    background: black ;
+    padding: 4px;
+    display: flex;
+    background: linear-gradient(45deg, #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000, #ffff00, #00ff00, #001aff, #a200ff);
+    border-radius: 18px;
+    width: 208px;
+    height: 297px;
+    align-items: center; 
+    flex-direction:column;
+    border-right: 40px;
+    border-width: 40px;
+    background-size: 300% ;
+    animation: borda 9s linear infinite;
+    transition: 0.4s ease-in-out;
+}
+
+ .caixa:hover{
+    transform: scale(1.06);
+    cursor: pointer;
+}
+
+@keyframes borda{
+    0%{
+        background-position: 0 ;
+    }
+    50%{
+        background-position: 200% ;
+    }
+    100%{
+        background-position: 300%;
+    } 
+}
+
+
+main .c-grama-veneno:hover {
+    background-color: rgba(83, 220, 140, 0.809);
+    transform: scale(1.00);
+    cursor: pointer;
+}
+
+main .c-fogo:hover {
+    background-color: rgba(250, 113, 39, 0.768);
+    transform: scale(1.00);
+    cursor: pointer;
+}
+
+main .c-agua:hover {
+    background-color: rgba(45, 35, 244, 0.785);
+    transform: scale(1.00);
+    cursor: pointer;
+}
+
+main .c-inseto:hover {
+    background-color: rgba(72, 168, 8, 0.719);
+    transform: scale(1.00);
+    cursor: pointer;
+}
+
+main .card-pokemon .informations {
+    display: flex;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    justify-content: space-between;
+}
+
+main .card-pokemon .informations span {
+    padding: 4px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+main .card-pokemon .gif {
+    height: 75px;
+    width: 75px;
+    padding: 9px;
+    padding-left: 14px;
+    border: solid;
+    border-width: 2px;
+    border-radius: 35px;
+    border-style: groove; 
+
+}
+
+main .card-pokemon .g-charmeleon{
+    padding: 4px;
+    padding-left: 20px;
+}
+
+main .card-pokemon .Tipos-de-pokemons {
+    gap: 10px;
+    display: flex;
+
+}
+
+main .card-pokemon .Tipo {
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.Grama {
+    background-color: rgba(84, 183, 3, 0.716);
+}
+
+.Veneno {
+    background-color: #df67ddfb;
+}
+
+.Agua {
+    background-color: rgba(41, 51, 158, 0.757);
+}
+
+.Fogo {
+    background-color: rgb(244, 75, 33);
+}
+
+.Inseto {
+    background-color: rgba(7, 84, 38, 0.598);
+}
+
+main .descricao {
+    max-height: 60px;
+    overflow-y: scroll;
+    font-size: 12px;
+    padding-right: 10px;
+}
