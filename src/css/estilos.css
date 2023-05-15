@@ -71,8 +71,6 @@ main .card-pokemon {
     height: 297px;
     align-items: center; 
     flex-direction:column;
-    border-right: 40px;
-    border-width: 40px;
     background-size: 300% ;
     animation: borda 9s linear infinite;
     transition: 0.4s ease-in-out;
